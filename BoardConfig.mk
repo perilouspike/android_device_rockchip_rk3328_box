@@ -53,7 +53,7 @@ BOARD_SECOND_OFFSET := 0x00f00000
 BOARD_DTB_OFFSET := 0x01f00000
 BOARD_KERNEL_IMAGE_NAME := Image
 #BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE := console=ttyFIQ0 firmware_class.path=/vendor/etc/firmware init=/init rootwait ro loop.max_part=7 androidboot.console=ttyFIQ0 androidboot.hardware=rk30board androidboot.boot_devices=ff520000.dwmmc androidboot.selinux=permissive androidboot.wificountrycode=HK androidboot.console=ttyFIQ0 androidboot.hardware=rk30board androidboot.boot_devices=ff520000.dwmmc androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery # TODO: Used in other device tree. Do we need it?
