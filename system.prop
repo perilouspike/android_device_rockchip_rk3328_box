@@ -1,0 +1,7 @@
+ro.hardware=rk30board
+ro.board.platform=rk3328
+#ro.crypto.uses_fs_ioc_add_encryption_key=true
+ro.treble.enabled=true
+ro.sf.lcd_density=240
+#ro.secure=1
+#ro.adb.secure=0
