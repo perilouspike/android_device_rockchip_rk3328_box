@@ -25,6 +25,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
+# CPU sets
+ENABLE_CPUSETS := true
+
 # Arch Suffix
 TARGET_IS_64_BIT := true
 TARGET_BOARD_SUFFIX := _64
@@ -98,6 +101,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_BOARD_PLATFORM := $(PRODUCT_PLATFORM )
 PRODUCT_PLATFORM := rk3328
 
+# Graphics
+BOARD_EGL_CFG := $(DEVICE_FOLDER)/egl.cfg
+USE_OPENGL_RENDERER := true
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -112,6 +119,9 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 #BOARD_HAS_NO_SELECT_BUTTON := true
 
+# Android Verified Boot
+BOARD_AVB_ENABLE := false
+
 # Security patch level
 #VENDOR_SECURITY_PATCH := 2021-08-01
 
@@ -122,12 +132,14 @@ PLATFORM_VERSION := 16.1.0
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 
 # TWRP Configuration
+RECOVERY_VARIANT := twrp
 RECOVERY_SDCARD_ON_DATA := true
-TW_THEME := portrait_hdpi
+TW_THEME := landscape_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_NO_REBOOT_BOOTLOADER := true
 
 # Use Toolbox instead of Busybox
 TW_USE_TOOLBOX := true
@@ -136,6 +148,9 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_TWRP_APP := true
 TW_BACKUP_EXCLUSIONS := /data/fonts/,/data/nandswap
+
+# Maintainer/Version
+TW_DEVICE_VERSION := perilouspike
 
 # Set brightness path and level
 TW_MAX_BRIGHTNESS := 2047
