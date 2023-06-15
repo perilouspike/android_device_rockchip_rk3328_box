@@ -8,13 +8,13 @@
 LOCAL_PATH := device/rockchip/rk3328_box
 
 # Dynamic
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+#PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # API level
-#PRODUCT_SHIPPING_API_LEVEL := 29
+#PRODUCT_SHIPPING_API_LEVEL := 31
 
 # fastbootd
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery \
     fastbootd
