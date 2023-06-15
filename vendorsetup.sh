@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_rk3328_box-user
-add_lunch_combo omni_rk3328_box-userdebug
 add_lunch_combo omni_rk3328_box-eng

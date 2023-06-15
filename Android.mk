@@ -10,3 +10,5 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),rk3328_box)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
+
+include $(CLEAR_VARS)
